@@ -9,8 +9,8 @@ WebDriverUpdater makes use of these important packages:
 - winreg
 - wget
 - zipfile
-- keyboard
-- colorama
+- keyboard (not in CMD version)
+- colorama (not in CMD version)
 
 These packages allow the program to get your current version of your driver (if it's MS Edge or Chrome) by looking up to computer's registry records. Then, according to this version, it downloads the appropriate version of MS Edge Driver, Chrome Driver or Gecko Driver from its official website into the directory the script is in. As the driver (msedgedriver.exe or chromedriver.exe) comes in an archive, the script proceeds to extract the driver executable to "drivers" folder (with assumption of your Selenium program's possibility of using multiple browser drivers, eg. ChromeDriver or GeckoDriver) and deletes the archive once the file is extracted.
 
@@ -20,7 +20,8 @@ This program should work the way it does as long as Microsoft or Google doesn't 
 
 ### How To Use?
 
-All you need to do is to double-click or call it via another console/GUI interface. It doesn't take any arguments.
+**Standard webDriverUpdater:** All you need to do is to double-click or call it via another console/GUI interface. It doesn't take any arguments.
+**CMD webDriverUpdater:** python webDriverUpdater_cmd.py (--edge/--chrome/--firefox/--gecho/--help)
 
 ## Requirements
 

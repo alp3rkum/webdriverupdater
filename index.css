@@ -1,0 +1,28 @@
+/* Page's CSS file */
+
+html,body{
+    background-color: rgb(72,84,80);
+    color: rgb(241,236,243);
+}
+
+code{
+    color: greenyellow;
+}
+
+a{
+    color: rgb(241,236,243);
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+a:hover{
+    color: rgb(182,240,195);
+}
+
+a:active{
+    color: rgb(128,244,160);
+}
+
+a:visited{
+    color: rgb(241,236,243);
+}
